@@ -10,6 +10,8 @@ echo upload-git.sh >> .gitignore
 echo .gitignore >> .gitignore
 echo src/test.cpp >> .gitignore
 
+read
+
 git add --all
 
 git commit -m "Implemented addition of 64-bit unsigned integers along with overflow data"
