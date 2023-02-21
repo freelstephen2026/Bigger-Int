@@ -1,0 +1,29 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug",
+            // "program": "${workspaceFolder}/build/bin/test",
+            "program": "${workspaceFolder}/build/bin/test",
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        }
+    ],
+    "tasks": [
+        {
+          "label": "set_breakpoint",
+          "type": "shell",
+          "command": "lldb",
+          "args": [
+            "${workspaceFolder}/mem",
+            "-o", "breakpoint set --name __dyld_start",
+            "-o", "run"
+          ]
+        }
+      ]
+}
