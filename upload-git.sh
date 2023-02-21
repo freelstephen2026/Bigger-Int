@@ -3,6 +3,8 @@
 git pull
 git init
 
+echo cmake-examples/CMakeLists.txt >> .gitignore
+
 git add --all
 
 git commit -m "Implemented addition of 64-bit unsigned integers along with overflow data"
