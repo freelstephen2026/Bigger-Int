@@ -1,1 +1,6 @@
 cmake-examples/CMakeLists.txt
+clean.sh
+test.sh
+upload-git.sh
+.gitignore
+src/test.cpp

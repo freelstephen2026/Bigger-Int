@@ -4,6 +4,11 @@ git pull
 git init
 
 echo cmake-examples/CMakeLists.txt >> .gitignore
+echo clean.sh >> .gitignore
+echo test.sh >> .gitignore
+echo upload-git.sh >> .gitignore
+echo .gitignore >> .gitignore
+echo src/test.cpp >> .gitignore
 
 git add --all
 
@@ -11,6 +16,8 @@ git commit -m "Implemented addition of 64-bit unsigned integers along with overf
 
 git remote add origin https://github.com/freelstephen2026/Bigger-Int
 git push origin master
+
+rm .gitignore
 
 
 
